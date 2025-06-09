@@ -1,0 +1,173 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UEFA Champions League</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #1e1e1e;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1b1b4d;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      position: relative;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #2d2d7a;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 35px;
+      background-color: white;
+      color: #1e1e1e;
+      min-width: 150px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: #1e1e1e;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 2.5rem;
+      color: #1b1b4d;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background-color: #1b1b4d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      main h1 {
+        font-size: 2rem;
+      }
+
+      main p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">UEFA Champions League</div>
+    <nav>
+      <div class="menu">
+        <a href="#">Início</a>
+        <a href="#">Times</a>
+        <a href="#">Partidas</a>
+        <div class="dropdown">
+          <a href="#">Mais ▾</a>
+          <div class="dropdown-content">
+            <a href="#">Classificação</a>
+            <a href="#">Estatísticas</a>
+            <a href="#">História</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bem-vindo à UEFA Champions League</h1>
+    <p>
+      A maior competição de clubes da Europa, reunindo os melhores times do continente em confrontos épicos. 
+      Acompanhe notícias, resultados e curiosidades sobre a Champions League.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 UEFA Champions League. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>

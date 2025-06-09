@@ -1,0 +1,72 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swith</title>
+</head>
+
+<body>
+
+
+
+    <div>
+        <H1>Escolha um mês para as suas férias</H1>
+
+        <p>Você não pode pegar férias junto com algum dos seus colegas redatores, então você deve escolher um
+            dos três seguintes meses: Fevereiro, Julho ou Novembro.
+        </p>
+
+        <label for="mes">Selecione o mês das suas férias</label><br>
+        <select name="mes" id="mes">
+            <option value="">---</option>
+            <option value="2">Mês 2</option>
+            <option value="7">Mês 7</option>
+            <option value="11">Mês 11</option>
+        </select> <br><br>
+
+        <button onclick="validarmes()">Validar Mês</button>
+
+    </div>
+
+
+
+    <script>
+
+
+        function validarmes() {
+
+            const inputmes = document.getElementById('mes');
+
+            switch (inputmes.value) {
+
+                case "2":
+                    alert('Você vai tirar férias em Fevereiro!');
+                    break;
+
+                case "7":
+                    alert('Você vai tirar férias em Julho!');
+                    break;
+
+                case "11":
+                    alert('Você vai tirar férias em Novembro!');
+                    break;
+
+                default:
+                    alert('Irmão, pelo jeito você não quer férias, seleciona a porra do mês certo!!!');
+
+
+
+            }
+
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

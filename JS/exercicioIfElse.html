@@ -1,0 +1,43 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swith</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Turno de Trabalho</h1>
+        <input type="number" name="turno" id="turno">
+        <button onclick="validarturno()">Validar</button>
+    </div>
+
+
+
+    <script>
+
+        function validarturno() {
+
+            const inputurno = document.getElementById('turno');
+
+
+            if (inputturno.value => "6" !! inputturno.value =< "14"){
+                alert(`
+                        Você trabalha no primeiro turno!
+                `);
+
+            } else {
+                alert(`
+                   Usuário ou senha incorreto, seu farsante de uma figa!
+              `);
+        }
+
+    }
+
+    </script>
+
+
+</body>
+
+</html>

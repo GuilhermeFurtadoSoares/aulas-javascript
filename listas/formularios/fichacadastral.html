@@ -1,0 +1,61 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+
+    <form action="#">
+
+        <fieldset style="width: 550px;">
+
+            <h1 style="margin-left: 160px;">Ficha Cadastral</h1>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required style="width: 400px; margin-left: 99px;"><br><br>
+
+            <label for="RG">RG:</label>
+            <input type="text" id="RG" name="RG" style="width: 134px; margin-left: 116px;">
+
+            <label for="CPF" style="margin-left: 10px;">C.P.F.:</label>
+            <input type="text" id="CPF" name="CPF" required style="width: 134px; margin-left: 74px;"><br><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required style="width: 400px; margin-left: 77px;"><br><br>
+
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo" style="margin-left: 110px;">
+                <option value="">---</option>
+                <option value="MAS">Masculino</option>
+                <option value="FEM">Feminino</option>
+                <option value="OUT">Outro</option>
+            </select>
+
+
+            <label for="data" style="margin-left: 35px;">Data Nascimento</label>
+            <input type="date" id="data" name="data" required style="width: 134px; margin-left: 28px;"><br><br>
+
+            <label>Situação Civil</label>
+            <input type="radio" id="solteiro" name="situacao" value="1" style="margin-left: 50px;">
+            <label for="solteiro">Solteiro(a)</label>
+            <input type="radio" id="casado" name="situacao" value="2" style="margin-left: 30px;">
+            <label for="casado">Casado(a)</label>
+            <input type="radio" id="viuvo" name="situacao" value="3" style="margin-left: 30px;">
+            <label for="viuvo">Viúvo(a)</label><br><br>
+
+            <input type="submit" value="Enviar Dados" style="margin-left: 160px;">
+            <input type="reset" value="Limpar Dados" style="margin-left: 10px;">
+        </fieldset>
+
+    </form>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            background-color: cornflowerblue;
+            padding: 30px;
+            min-height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .card {
+            width: 100px;
+            padding: 10px;
+            margin: 4px;
+            background-color: crimson;
+            color: white;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: seagreen;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: green;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Gerando cards dinamenticamente através de Javascript</h1>
+
+    <button onclick="addCard()">Adicionar Card</button>
+
+    <div class="box" id="box">
+        <div class="card">Conteúdo</div>
+    </div>
+
+    <script>
+
+        function addCard() {
+
+            // Mapeando a div externa
+            const divBox = document.getElementById('box');
+
+            // Inserindo os cards
+            divBox.innerHTML += `
+            <div class="card">Conteúdo</div>
+            `;
+
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

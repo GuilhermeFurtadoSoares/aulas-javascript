@@ -1,0 +1,105 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        table,
+        caption tr,
+        td,
+
+
+        caption {
+            font-size: 23px;
+            font-weight: bold;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <table>
+
+            <caption><strong>Ficha Cadastral</strong></caption>
+
+            <tr>
+                <td>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required style="width: 400px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="RG">RG:</label>
+                    <input type="text" id="RG" name="RG" style="width: 134px;">
+                </td>
+
+                <td>
+                    <label for="CPF" style="margin-left: 10px;">C.P.F.:</label>
+                    <input type="text" id="CPF" name="CPF" required style="width: 134px;">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required style="width: 400px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="sexo">Sexo</label>
+                    <select name="sexo" id="sexo">
+                        <option value="">---</option>
+                        <option value="MAS">Masculino</option>
+                        <option value="FEM">Feminino</option>
+                        <option value="OUT">Outro</option>
+                    </select>
+
+                </td>
+                <label for="data" style="margin-left: 35px;">Data Nascimento</label>
+                <input type="date" id="data" name="data" required>
+                <td>
+
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>
+
+                    <label>Situação Civil</label>
+                    <input type="radio" id="solteiro" name="situacao" value="1" style="margin-left: 50px;">
+                    <label for="solteiro">Solteiro(a)</label>
+                    <input type="radio" id="casado" name="situacao" value="2" style="margin-left: 30px;">
+                    <label for="casado">Casado(a)</label>
+                    <input type="radio" id="viuvo" name="situacao" value="3" style="margin-left: 30px;">
+                    <label for="viuvo">Viúvo(a)</label>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar Dados" style="margin-left: 160px;">
+                </td>
+                <td>
+                    <input type="reset" value="Limpar Dados" style="margin-left: 10px;">
+                </td>
+
+            </tr>
+        </table>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login JS</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Login</h1>
+        <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com">
+        <input type="password" name="senha" id="senha" placeholder="********">
+        <button onclick="validarlogin()">Validar</button>
+    </div>
+
+
+    <!-- <input type="text" id="usuario" name="usuario">
+    <button onclick="capusuario()">Insira o usuário</button><br><br>
+
+    <input type="password" id="senha" name="senha">
+    <button onclick="capsenha()">Insira a senha</button><br><br> -->
+
+
+
+    <script>
+
+        function validarlogin() {
+
+            const inputemail = document.getElementById('email');
+            const inputsenha = document.getElementById('senha');
+
+        alert(`
+            Usuário logado com sucesso!
+            Acesso com o e-mail: ${inputemail.value}
+        `);
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

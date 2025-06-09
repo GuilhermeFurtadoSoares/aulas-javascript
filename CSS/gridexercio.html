@@ -1,0 +1,50 @@
+<html lang="pt-br">
+
+<head>
+    <style>
+        .container {
+            background-color: rgb(103, 103, 192);
+            display: grid;
+            padding: 10px;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+        }
+
+        .item {
+            background-color: rgb(120, 129, 124);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: solid 1px white;
+
+        }
+
+        .destaque {
+            grid-column: 1/5;
+        }
+
+        .destaque2 {
+            grid-column: 1/5;
+        }
+
+        .destaque3 {
+            grid-column: 1/4;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Entendendo modelo de layout de grid</h1>
+
+    <div class="container">
+        <div class="item destaque">Nome: Guilherme Felipe Furtado Soares - Redator Técnico</div>
+        <div class="item destaque3" style="background-color: white; color: blue;">Formado em: Jornalismo pela Univali. Experiência como repórter e assessor de imprensa. Desde 2019 trabalho como redator técnico. Foram três anos na Megasul e agora já estou há três anos na WK.</div>
+        <div class="item" style="background-color: white; color: blue;">Séries preferidas: The Big Bang Theory, Breacking Bad e Suits.</div>
+        <div class="item destaque2">Torcedor do Chelsea há mais de 20 anos.</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.relative {
+    border: solid 2px goldenrod;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+div {
+    width: 300px;
+    margin-bottom: 30px;
+
+}
+
+.fixa {
+    border: solid 2px red;
+    padding: 10px;
+    position: fixed;
+    botton: 0;
+    right: 0;
+}
+
+.pop-up {
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    top: 100;
+    right: 70;
+    text-align: center;
+}
+
+.sticky {
+background-color: aqua;
+border: solid 2px green;
+padding: 10px;
+top: 0;
+position: sticky;
+
+}

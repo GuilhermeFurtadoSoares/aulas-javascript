@@ -1,0 +1,35 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Capturando valores HTML com Javascript</h1>
+    <input type="text" id="nome" name="nome">
+    <!-- Vinculando uma função do Javascript ao evento de click do botão -->
+    <button onclick="exibirNome()">Clique para capturar o nome</button>
+
+
+    <script>
+
+        // Declarando uma função básica do Javascript
+        function exibirNome() {
+
+            // Mapear o elemento html através do ID e armazenar o valor na constante
+            // armazenar o valor na constante
+            const inputNome = document.getElementById('nome');
+            console.log(inputNome.value);
+            alert('Nome digitado: ' + inputNome.value);
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

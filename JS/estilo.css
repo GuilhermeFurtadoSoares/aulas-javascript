@@ -1,0 +1,15 @@
+div {
+    text-align: center;
+    background-color: blue;
+}
+
+input {
+    border: none;
+    background-color: white;
+    color: blue;
+    outline: yellow;
+}
+
+button {
+    border-radius: 4px;
+}

@@ -1,0 +1,75 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" id="n1" name="n1">
+    <button onclick="exibirN1()">Clique para capturar o número 1</button><br><br>
+
+    <input type="number" id="n2" name="n2">
+    <button onclick="exibirN2()">Clique para capturar o número 2</button><br><br>
+
+    <button onclick="fazerOperacoes()">Exibir operações</button>
+
+
+
+    <script>
+
+
+        function exibirN1() {
+
+            const inputN1 = document.getElementById('n1');
+            console.log(inputN1.value);
+            alert('Primeiro número digitado: ' + inputN1.value);
+
+        }
+
+
+        function exibirN2() {
+
+            const inputN2 = document.getElementById('n2');
+            console.log(inputN2.value);
+            alert('Primeiro número digitado: ' + inputN2.value);
+
+        }
+
+        function fazerOperacoes() {
+            const n1 = parseFloat(document.getElementById('n1').value);
+            const n2 = parseFloat(document.getElementById('n2').value);
+
+            if (isNaN(n1) || isNaN(n2)) {
+                alert("Por favor, insira dois números válidos.");
+                return;
+            }
+
+            const soma = n1 + n2;
+            const subtracao = n1 - n2;
+            const multiplicacao = n1 * n2;
+            const divisao = n2 !== 0 ? n1 / n2 : 'Divisão por zero não é permitida';
+
+            alert(
+                'Soma: ' + soma +
+                '\nSubtração: ' + subtracao +
+                '\nMultiplicação: ' + multiplicacao +
+                '\nDivisão: ' + divisao
+            );
+        }
+
+
+
+        // inputN1 = document.getElementById('n1');
+        //const valor = Number(inputN1.value);
+
+        // inputN1 = document.getElementById('n2');
+        // const valor = Number(inputN2.value);
+
+    </script>
+
+</body>
+
+</html>

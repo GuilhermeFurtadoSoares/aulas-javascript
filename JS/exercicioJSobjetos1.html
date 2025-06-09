@@ -1,0 +1,127 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Obejtos JS</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            background-color: cornflowerblue;
+            padding: 30px;
+            min-height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .card {
+            width: 100px;
+            padding: 10px;
+            margin: 4px;
+            background-color: crimson;
+            color: white;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: seagreen;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: green;
+
+        }
+
+        input {
+            margin-left: 50px;
+        }
+
+        label {
+            margin-left: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <form action="#">
+        <br><br>
+        <label for="codigo">Código:</label><br>
+        <input type="number" id="codigo" name="codigo"><br><br>
+
+        <label for="preco">Preço:</label><br>
+        <input type="number" id="preco" name="preco"><br><br>
+
+        <label for="descricao">Descrição:</label><br>
+        <input type="text" id="descricao" name="descricao"><br><br><br>
+
+    </form>
+
+
+    <button onclick="addCard()">Adicionar Card</button>
+
+    <div class="box" id="box">
+        <div class="card">Produto</div>
+    </div>
+
+    <script>
+
+
+        const inputcodigo = (document.getElementById('codigo').value);
+        const inputpreco = (document.getElementById('preco').value);
+        const inputdescricao = (document.getElementById('descricao').value);
+
+        let produto = {
+            codigo: inputcodigo.value,
+            preco: inputpreco.value,
+            descricao: inputdescricao.value,
+        };
+
+        const divBox = document.getElementById('box');
+
+
+        function addCard() {
+
+
+            // Mapeando a div externa
+
+
+            const novoCard = `
+            divBox.innerHTML += 
+            <div class="card">
+                <p><strong>Código:</strong> ${codigo}</p>
+                <p><strong>Preço:</strong> R$ ${preco}</p>
+                <p><strong>Descrição:</strong> ${descricao}</p>
+            </div>
+ 
+        `;
+
+
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

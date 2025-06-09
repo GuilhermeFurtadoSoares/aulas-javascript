@@ -1,0 +1,47 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login 2 JS</title>
+        <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <div>
+        <h1>Login</h1>
+        <input type="text" name="usuario" id="usuario" placeholder="peterson">
+        <input type="password" name="senha" id="senha" placeholder="*****">
+        <button onclick="validarlogin()">Validar</button>
+    </div>
+
+
+
+    <script>
+
+        function validarlogin() {
+
+            const inputusuario = document.getElementById('usuario');
+            const inputsenha = document.getElementById('senha');
+
+
+            if (inputusuario.value == "admin" && inputsenha.value == "admin"){
+                alert(`
+                        Usuário logado com sucesso!
+                `);
+
+            } else {
+                alert(`
+                   Usuário ou senha incorreto, seu farsante de uma figa!
+              `);
+        }
+
+    }
+
+    </script>
+
+
+</body>
+
+</html>
