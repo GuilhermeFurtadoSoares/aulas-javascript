@@ -1,0 +1,88 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Manipulando vetores</h1>
+
+    <label for="descricao">Descrição do produto:</label><br>
+    <input type="text" id="descricao" name="descricao" required>
+
+    <label for="posicao">Posição do produto:</label><br>
+    <input type="number" id="posicao" name="posicao" required>
+
+    <button onclick="addinicio()">Adicionar produto no início da lista</button>
+    <button onclick="addfinal()">Adicionar produto no final da lista</button>
+    <button onclick="reminicio()">Remover o primeiro produto da lista</button>
+    <button onclick="remultimo()">Remover o último produto da lista</button>
+    <button onclick="remespecifica()">Remover um produto de uma posição específica da lista</button>
+    <button onclick="insespecifica()">Inserir um produto em uma posição específica da lista</button>
+
+    <script>
+
+        function addinicio() {
+
+            listaProdutos.unshift('');
+            console.log(listaProdutos.toString(produto));
+
+        }
+
+
+        function addfinal() {
+
+            listaProdutos.push('');
+            console.log(listaProdutos.toString());
+
+        }
+
+
+        function reminicio() {
+
+            listaProdutos.shift();
+            console.log(listaProdutos.toString());
+
+        }
+
+
+        function remultimo() {
+
+            listaProdutos.pop();
+            console.log(listaProdutos.toString());
+
+
+        }
+
+
+        function remespecifica() {
+
+            listaProdutos.splice();
+            console.log(listaProdutos.toString());
+
+
+        }
+
+
+        function insespecifica() {
+
+            listaProdutos.splice();
+            console.log(listaProdutos.toString());
+
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
