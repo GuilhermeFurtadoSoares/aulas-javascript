@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Trabalhando com laços otimizados</h1>
+
+
+    <h2>Lista For tradicional</h2>
+    <div id="listaFor"></div>
+
+    <h2>Lista ForEach</h2>
+    <div id="listaForEach"></div>
+
+
+
+    <h2>Lista de números positivos</h2>
+    <div id="listaPositivos"></div>
+
+
+    <script>
+
+        const listaProdutos = [
+
+            'Brigadeiro', 'Coxinha', 'Esfirra', 'Pastel', 'Bolo de chocolate', "Sonho"
+
+        ];
+
+        const divListaFor = document.getElementById('listaFor');
+
+        // Percorrendo a lista através de um FOR tradicional
+        for (let contador = 0; contador < listaProdutos.length; contador++) {
+            divListaFor.innerHTML += `<p>${listaProdutos[contador]}</p>`;
+
+        }
+
+
+        const divListaForEach = document.getElementById('listaForEach');
+        // Percorrendo a lista através do FOR...EACH
+        listaProdutos.forEach(function (produto) {
+            divListaForEach.innerHTML += `<p>${produto}</p>`;
+
+
+        });
+
+   
+        const listaNumeros = [8,-68,1,-9,859,-22,712,-45];
+        const divListaPositivos = document.getElementById('listaPositivos');
+
+        // Usando o ForEach para imprimir somente os números Positivos
+        listaNumeros.forEach(numero => {
+            if(numero >=0) {
+               divListaPositivos.innerHTML += '<p>' + numero + '</p>';
+
+            }
+
+
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
